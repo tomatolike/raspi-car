@@ -1,0 +1,628 @@
+{
+    "Blizzard":{
+        "centers":[
+            {
+		        "basename":   	"chicago",
+		        "location":     "Chicago",
+				"continent":	"NA",
+		        "geo":          {
+				    "lat": 41.88,
+    				"lng": -87.63
+		        },
+		        "id":         230
+		    },
+		    {
+		        "basename":   	"paris",
+		        "location":     "Paris",
+				"continent":	"EU",
+		        "geo":          {
+				    "lat": 48.86,
+    				"lng": 2.35
+		        },
+		        "id":         231
+		    },
+		    {
+		        "basename":   	"los-angeles",
+		        "location":     "Los Angeles",
+				"continent":	"NA",
+		        "geo":          {
+					"lat": 34.05,
+					"lng": -118.24
+		        },
+		        "id":         232
+		    },
+		    {
+		        "basename":   	"seoul",
+		        "location":     "Seoul",
+				"continent":	"AS",
+		        "geo":          {
+				    "lat": 37.5665,
+    				"lng": 126.9780
+		        },
+		        "id":         233
+		    },
+		    {
+		        "basename":   	"sydney",
+		        "location":     "Sydney",
+				"continent":	"AU",
+		        "geo":          {
+					"lat": -33.87,
+					"lng": 151.21
+		        },
+		        "id":         234
+		    },
+		    {
+		        "basename":   	"amsterdam",
+		        "location":     "Amsterdam",
+				"continent":	"EU",
+		        "geo":          {
+					"lat": 52.37,
+					"lng": 4.9
+		        },
+		        "id":         235
+		    }
+
+        ]
+    },
+    "GameServers":{
+        "centers":[
+            {
+                "id": 101,
+                "name": "New Jersey",
+                "short_datacenter": "New",
+                "has_vultr": true,
+                "lat": 40.54,
+                "lng": -74.47,
+                "alt_names": [
+                  "New York"
+                ],
+                "continent":  "NA",
+                "basename": "new-jersey",
+                "hostname-prefixes": [
+                  "nj"
+                ]
+              },
+              {
+                "id": 102,
+                "name": "Chicago",
+                "short_datacenter": "Chi",
+                "has_vultr": true,
+                "lat": 41.88,
+                "lng": -87.63,
+                "continent":  "NA",
+                "basename": "chicago",
+                "hostname-prefixes": [
+                  "chi"
+                ]
+              },
+              {
+                "id": 103,
+                "name": "Dallas",
+                "short_datacenter": "Dal",
+                "has_vultr": true,
+                "lat": 32.78,
+                "lng": -96.8,
+                "continent":  "NA",
+                "basename": "dallas",
+                "hostname-prefixes": [
+                  "da"
+                ]
+              },
+              {
+                "id": 104,
+                "name": "Seattle",
+                "short_datacenter": "Sea",
+                "has_vultr": true,
+                "lat": 47.61,
+                "lng": -122.33,
+                "continent":  "NA",
+                "basename": "seattle",
+                "hostname-prefixes": [
+                  "sea"
+                ]
+              },
+              {
+                "id": 105,
+                "name": "Los Angeles",
+                "short_datacenter": "Los",
+                "has_vultr": true,
+                "lat": 34.05,
+                "lng": -118.24,
+                "continent":  "NA",
+                "basename": "los-angeles",
+                "hostname-prefixes": [
+                  "la"
+                ]
+              },
+              {
+                "id": 108,
+                "name": "London",
+                "short_datacenter": "Lon",
+                "has_vultr": true,
+                "lat": 51.51,
+                "lng": -0.12,
+                "alt_names": [
+                  "United Kingdom"
+                ],
+                "continent":  "EU",
+                "basename": "london",
+                "hostname-prefixes": [
+                  "lon"
+                ]
+              },
+              {
+                "id": 106,
+                "name": "Atlanta",
+                "short_datacenter": "Atl",
+                "has_vultr": true,
+                "lat": 33.75,
+                "lng": -84.39,
+                "continent":  "NA",
+                "basename": "atlanta",
+                "hostname-prefixes": [
+                  "atl"
+                ]
+              },
+              {
+                "id": 107,
+                "name": "Amsterdam",
+                "short_datacenter": "Ams",
+                "has_vultr": true,
+                "lat": 52.37,
+                "lng": 4.9,
+                "alt_names": [
+                  "Netherlands"
+                ],
+                "continent":  "EU",
+                "basename": "amsterdam",
+                "hostname-prefixes": [
+                  "ams"
+                ]
+              },
+              {
+                "id": 109,
+                "name": "Frankfurt",
+                "short_datacenter": "Fra",
+                "has_vultr": true,
+                "lat": 50.11,
+                "lng": 8.68,
+                "alt_names": [
+                  "Germany"
+                ],
+                "continent":  "EU",
+                "basename": "frankfurt",
+                "hostname-prefixes": [
+                  "fr"
+                ]
+              },
+              {
+                "id": 111,
+                "name": "Tampa",
+                "short_datacenter": "Tam",
+                "lat": 27.95,
+                "lng": -82.46,
+                "continent":  "NA",
+                "basename": "tampa"
+              },
+              {
+                "id": 112,
+                "name": "San Jose",
+                "short_datacenter": "San",
+                "has_vultr": true,
+                "lat": 37.34,
+                "lng": -121.89,
+                "continent":  "NA",
+                "basename": "san-jose",
+                "alt_names": [
+                  "Silicon Valley"
+                ],
+                "hostname-prefixes": [
+                  "sjo"
+                ]
+              },
+              {
+                "id": 113,
+                "name": "St. Louis",
+                "short_datacenter": "StL",
+                "lat": 38.63,
+                "lng": -90.2,
+                "continent":  "NA",
+                "basename": "st-louis",
+                "hostname-prefixes": [
+                  "stl"
+                ],
+                "alt_names": [
+                  "St. Louis",
+                  "St Louis"
+                ]
+              },
+              {
+                "id": 115,
+                "name": "Montreal",
+                "short_datacenter": "Mon",
+                "lat": 45.51,
+                "lng": -73.55,
+                "continent":  "NA",
+                "basename": "montreal",
+                "hostname-prefixes": [
+                  "ca"
+                ]
+              },
+              {
+                "id": 119,
+                "name": "Sydney",
+                "short_datacenter": "Syd",
+                "has_vultr": true,
+                "lat": -33.87,
+                "lng": 151.21,
+                "alt_names": [
+                  "Australia"
+                ],
+                "continent":  "OC",
+                "basename": "sydney",
+                "hostname-prefixes": [
+                  "syd"
+                ]
+              },
+              {
+                "id": 121,
+                "name": "Denmark",
+                "short_datacenter": "Den",
+                "lat": 56.04,
+                "lng": 9.93,
+                "continent":  "EU",
+                "basename": "denmark",
+                "hostname-prefixes": [
+                  "dmk"
+                ]
+              },
+              {
+                "id": 124,
+                "name": "Paris",
+                "short_datacenter": "Par",
+                "has_vultr": true,
+                "lat": 48.86,
+                "lng": 2.35,
+                "alt_names": [
+                  "France"
+                ],
+                "continent":  "EU",
+                "basename": "paris",
+                "hostname-prefixes": [
+                  "france"
+                ]
+              },
+              {
+                "id": 125,
+                "name": "Tokyo",
+                "short_datacenter": "Tok",
+                "has_vultr": true,
+                "lat": 35.69,
+                "lng": 139.69,
+                "alt_names": [
+                  "Japan"
+                ],
+                "continent":  "AS",
+                "basename": "tokyo",
+                "hostname-prefixes": [
+                  "jpn"
+                ]
+              },
+              {
+                "id": 126,
+                "name": "Moscow",
+                "short_datacenter": "Mos",
+                "lat": 55.76,
+                "lng": 37.62,
+                "alt_names": [
+                  "Russia",
+                  "Moscow Russia"
+                ],
+                "continent":  "EU",
+                "basename": "moscow",
+                "hostname-prefixes": [
+                  "moscow"
+                ]
+              },
+              {
+                "id": 127,
+                "name": "Warsaw",
+                "short_datacenter": "War",
+                "lat": 52.23,
+                "lng": 21.01,
+                "alt_names": [
+                  "Poland",
+                  "Warsaw Poland"
+                ],
+                "continent":  "EU",
+                "basename": "warsaw",
+                "hostname-prefixes": [
+                  "poland"
+                ]
+              },
+              {
+                "id": 129,
+                "name": "Madrid",
+                "short_datacenter": "Mad",
+                "lat": 40.42,
+                "lng": -3.7,
+                "alt_names": [
+                  "Spain",
+                  "Madrid Spain"
+                ],
+                "continent":  "EU",
+                "basename": "madrid",
+                "hostname-prefixes": [
+                  "mad"
+                ]
+              },
+              {
+                "id": 130,
+                "name": "Sao Paulo",
+                "short_datacenter": "Sao",
+                "lat": -23.55,
+                "lng": -46.64,
+                "alt_names": [
+                  "Brazil",
+                  "Sao Paulo Brazil"
+                ],
+                "continent":  "SA",
+                "basename": "sao-paulo",
+                "hostname-prefixes": [
+                  "bzl"
+                ]
+              },
+              {
+                "id": 131,
+                "name": "Cape Town",
+                "short_datacenter": "Cap",
+                "lat": -33.92,
+                "lng": 18.42,
+                "alt_names": [
+                  "Cape Town South"
+                ],
+                "continent":  "AF",
+                "basename": "cape-town"
+              },
+              {
+                "id": 132,
+                "name": "Johannesburg",
+                "short_datacenter": "Joh",
+                "lat": -26.2,
+                "lng": 28.05,
+                "alt_names": [
+                  "Johannesburg South Africa"
+                ],
+                "continent":  "AF",
+                "basename": "johannesburg",
+                "hostname-prefixes": [
+                  "sajb"
+                ]
+              },
+              {
+                "id": 133,
+                "name": "Milan",
+                "short_datacenter": "Mil",
+                "lat": 45.47,
+                "lng": 9.19,
+                "alt_names": [
+                  "Italy"
+                ],
+                "continent":  "EU",
+                "basename": "milan",
+                "hostname-prefixes": [
+                  "italy"
+                ]
+              },
+              {
+                "id": 139,
+                "name": "Miami",
+                "short_datacenter": "Mia",
+                "lat": 25.76,
+                "lng": -80.45,
+                "continent":  "NA",
+                "basename": "miami",
+                "hostname-prefixes": [
+                  "mia"
+                ]
+              },
+              {
+                "id": 140,
+                "name": "Singapore",
+                "short_datacenter": "Sin",
+                "has_vultr": true,
+                "lat": 1.3521,
+                "lng": 103.8198,
+                "continent":  "AS",
+                "ignore_this_vultr_machine_types": [
+                  "vultr-large"
+                ],
+                "basename": "singapore"
+              }
+        ]
+    },
+    "Multiplay":{
+        "centers":[
+        
+            {
+              "id": 160,
+              "name": "New York",
+              "lat": 40.54,
+              "lng": -74.47,
+              "continent":	"NA",
+              "alt_names": [ "NYC1" ],
+              "short_datacenter": "MNY"
+            },
+            {
+              "id": 161,
+              "name": "Ashburn",
+              "lat": 39.0438,
+              "lng": -77.4874,
+              "continent":	"NA"
+            },
+            {
+              "id": 162,
+              "name": "Amsterdam",
+              "lat": 52.37,
+              "lng": 4.9,
+              "continent":	"EU",
+              "alt_names": [ "AMS" ],
+              "short_datacenter": "MAM"
+            },
+            {
+              "id": 163,
+              "name": "Dallas",
+              "lat": 32.78,
+              "lng": -96.8,
+              "continent":	"NA"
+            },
+            {
+              "id": 164,
+              "name": "Hong Kong",
+              "lat": 22.3964,
+              "lng": 114.1095,
+              "continent":	"AS"
+            },
+            {
+              "id": 165,
+              "name": "London",
+              "lat": 51.51,
+              "lng": -0.12,
+              "continent":	"EU",
+              "alt_names": [ "LON1", "Maidenhead" ],
+              "short_datacenter": "MLN"
+            },
+            {
+              "id": 166,
+              "name": "Sao Paulo",
+              "lat": -23.55,
+              "lng": -46.64,
+              "continent":	"SA"
+            },
+            {
+              "id": 167,
+              "name": "Singapore",
+              "lat": 1.3521,
+              "lng": 103.8198,
+              "continent":	"AS"
+            },
+            {
+              "id": 168,
+              "name": "San Jose",
+              "lat": 37.34,
+              "lng": -121.89,
+              "continent":	"NA"
+            },
+            {
+              "id": 169,
+              "name": "Sydney",
+              "lat": -33.87,
+              "lng": 151.21,
+              "continent":	"AU"
+            },
+            {
+              "id": 170,
+              "name": "Los Angeles",
+              "lat": 34.05,
+              "lng": -118.24,
+              "continent":	"NA"
+            },
+            {
+              "id": 171,
+              "name": "Strasbourg",
+              "lat": 48.5734,
+              "lng":  7.7521,
+              "continent":	"EU"
+            },
+            {
+              "id": 172,
+              "name": "Washington DC",
+              "lat": 38.9072,
+              "lng":  -77.0369,
+              "continent":	"NA"
+            },
+            {
+              "id": 173,
+              "name": "Chicago",
+              "lat": 41.8781,
+              "lng":  -87.6298,
+              "continent":	"NA"
+            },
+            {
+              "id": 174,
+              "name": "Luxembourg",
+              "lat": 49.8153,
+              "lng":  6.1296,
+              "continent":	"EU"
+            },
+            {
+              "id": 175,
+              "name": "Salt Lake City",
+              "lat": 40.7608,
+              "lng":  -111.8910,
+              "continent":	"NA",
+              "alt_names": [ "SLC1" ],
+              "short_datacenter": "MSL"
+            },
+            {
+              "id": 176,
+              "name": "Tokyo",
+              "lat": 35.69,
+              "lng": 139.69,
+              "continent":	"AS"
+            },
+            {
+              "id": 177,
+              "name": "Paris",
+              "lat": 48.86,
+              "lng": 2.35,
+              "continent":	"EU"
+            },
+            {
+              "id": 178,
+              "name": "St Louis",
+              "lat": 38.63,
+              "lng": -90.2,
+              "continent":	"NA"
+            },
+            {
+              "id": 179,
+              "name": "Miami",
+              "lat": 25.76,
+              "lng": -80.45,
+              "continent":	"NA"
+            },
+            {
+              "id": 180,
+              "name": "Atlanta",
+              "lat": 33.75,
+              "lng": -84.39,
+              "continent":	"NA"
+            },
+            {
+              "id": 181,
+              "name": "Moscow",
+              "lat": 55.76,
+              "lng": 37.62,
+              "continent":	"AS"
+            },
+            {
+              "id": 182,
+              "name": "Johannesburg",
+              "lat": -26.2,
+              "lng": 28.05,
+              "continent":	"AF"
+            },
+            {
+              "id": 183,
+              "name": "Frankfurt",
+              "lat": 50.11,
+              "lng": 8.68,
+              "continent":	"EU",
+              "alt_names": [ "FRA1", "FRA2" ],
+              "short_datacenter": "MFR"
+            }
+          ]
+             
+    }
+}
