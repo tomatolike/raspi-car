@@ -12,3 +12,15 @@ def send(packet):
         return True
     else:
         return False
+
+def status():
+    global network
+    msg = {
+        "connected":'unconnected',
+        "addr":("",-1)
+    }
+    if network.connected:
+        msg['connected'] = 'connected'
+        msg['addr'] = network.addr
+
+    return msg

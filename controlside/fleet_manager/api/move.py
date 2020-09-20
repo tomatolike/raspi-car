@@ -10,6 +10,15 @@ import lib.network_interface as ni
 class MoveView( View ):
 
     # api/move/
+    def get( self, request, *args, **kwargs ):
+        msg = {
+            "success":True,
+            "data":ni.status()
+        }
+        print(msg)
+        return JsonResponse(msg)
+
+    # api/move/
     def post( self, request, *args, **kwargs ):
 
         data = json.loads(request.body)

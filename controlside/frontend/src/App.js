@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import apicallpost from './component/POST'
+import apicallget from './component/GET'
+import {Container, Row, Col} from 'react-bootstrap'
 
 class App extends Component {
   constructor(props) {
@@ -13,11 +15,16 @@ class App extends Component {
       stop:true,
       last:null,
       interval:null,
-      status:'stop'
+      status:'stop',
+      connected:false,
+      addr:'',
+      timeset:50,
     };
     this.keydown=this.keydown.bind(this);
     this.keyup=this.keyup.bind(this);
     this.updateStatus = this.updateStatus.bind(this);
+    this.apiget = this.apiget.bind(this);
+    this.apicall = this.apicall.bind(this);
   }
 
   keydown(event){
@@ -66,6 +73,22 @@ class App extends Component {
     )
   }
 
+  apiget(){
+    let mycomp = this
+
+    let endpoint = '../api/move/'
+    apicallget(endpoint).then(
+      function(responseData){
+        console.log(responseData)
+        mycomp.setState({connected:responseData.data.connected,addr:responseData.data.addr[0]})
+        }
+    ).catch(
+      function(error){
+        console.log("error", error)
+      }
+    )
+  }
+
   updateStatus(){
     if(this.state.W != true && this.state.S != true && this.state.A != true && this.state.D != true){
       if(this.state.status != 'stop'){
@@ -79,6 +102,14 @@ class App extends Component {
         this.apicall(_last);
       }
     }
+    var _time = this.state.timeset;
+    _time = _time-1;
+    if(_time == 0){
+      this.apiget();
+      this.setState({timeset:50})
+    }else{
+      this.setState({timeset:_time})
+    }
   }
 
   componentDidMount(){
@@ -87,11 +118,27 @@ class App extends Component {
   }
 
   render() {
+    var _url = 'http://'+this.state.addr+':8081/mjpeg'
     return (
-      <div >
-        {this.state.status}
-        <input onKeyDown={this.keydown} onKeyUp={this.keyup} />
-      </div>
+      <Container fluid>
+        <Row style={{minHeight:"25vh", display:"flex", flexWrap:"wrap",alignItems:'center',alignContent:'center'}}>
+          <Col style={{flexGrow:1}}>
+            <img src={_url}/>
+          </Col>
+        </Row>
+        <Row style={{height:"25vh",alignItems:'center',alignContent:'center'}}>
+          <Col style={{flexGrow:1}}>
+            moving:{this.state.status}<br/>
+            network:{this.state.connected}<br/>
+            address:{this.state.addr}<br/>
+          </Col>
+        </Row>
+        <Row style={{minHeight:"25vh", display:"flex", flexWrap:"wrap",alignItems:'center',alignContent:'center'}}>
+          <Col style={{flexGrow:1}}>
+            <input onKeyDown={this.keydown} onKeyUp={this.keyup} />
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
