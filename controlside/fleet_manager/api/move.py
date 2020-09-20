@@ -16,6 +16,16 @@ class MoveView( View ):
 
         print(data)        
 
+        dic = {
+            'W':'forward',
+            'S':'back',
+            'A':'left',
+            'D':'right',
+            'stop':'stop'
+        }
+
+        data['order'] = dic[data['order']]
+
         msg = {
             "success":ni.send(data)
         }

@@ -2,7 +2,7 @@ from lib.network import NETWORK
 
 network = NETWORK()
 
-network.start_tcp()
+network.start_tcp(12345)
 
 def send(packet):
     global network
