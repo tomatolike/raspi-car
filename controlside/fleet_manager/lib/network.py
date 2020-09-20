@@ -17,12 +17,14 @@ class NETWORK:
 		self.udp_socket.close()
 
 	def start_tcp(self,_port):
+		print("Start TCP Binding!")
 		self.port = _port
 		self.tcp_socket = socket.socket()
 		self.tcp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+		self.connected = False
 		try:
 			print(socket.gethostname(),self.port)
-			self.tcp_socket.bind(('192.168.1.12',self.port))
+			self.tcp_socket.bind(('192.168.1.13',self.port))
 			self.tcp_socket.listen(5)
 			return True
 		except Exception as e:
@@ -36,11 +38,17 @@ class NETWORK:
 		print(_addr)
 		self.c = _c
 		self.addr = _addr
+		self.connected = True
 
 	def send_tcp(self,data):
 		data_str = json.dumps(data)
 		send_data = bytes(data_str,'utf-8')
-		self.c.send(send_data)
+		try:
+			self.c.send(send_data)
+			return True
+		except:
+			self.connected = False
+			return False
 
 	def close_tcp(self):
 		self.c.close()

@@ -61,7 +61,7 @@ class CAR:
         #     print("END motion Failed")
 
     def connect_to(self):
-        while not self.network.connect_tcp('192.168.1.12',12345):
+        while not self.network.connect_tcp('192.168.1.13',12345):
             print("Connecting ...")
             time.sleep(5)
 
