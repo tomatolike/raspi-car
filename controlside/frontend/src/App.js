@@ -157,7 +157,7 @@ class App extends Component {
       <Container fluid>
         <Row style={{minHeight:"25vh", display:"flex", flexWrap:"wrap",alignItems:'center',alignContent:'center'}}>
           <Col style={{flexGrow:1}}>
-            <img src={_url}/>
+            <img style={{height:"25vh"}} src={_url}/>
           </Col>
         </Row>
         <Row style={{height:"25vh",alignItems:'center',alignContent:'center'}}>
@@ -173,17 +173,17 @@ class App extends Component {
               <tbody>
                 <tr>
                   <td></td>
-                  <td><Button id='w' onMouseDown={this.touchstart} onTouchStart={this.touchstart} onTouchEnd={this.touchend} onMouseUp={this.touchend} >W</Button></td>
+                  <td><Button style={{width:"100%"}} id='w' onMouseDown={this.touchstart} onTouchStart={this.touchstart} onTouchEnd={this.touchend} onMouseUp={this.touchend} >W</Button></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td><Button id='a' onMouseDown={this.touchstart} onTouchStart={this.touchstart} onTouchEnd={this.touchend} onMouseUp={this.touchend} >A</Button></td>
+                  <td><Button style={{width:"100%"}} id='a' onMouseDown={this.touchstart} onTouchStart={this.touchstart} onTouchEnd={this.touchend} onMouseUp={this.touchend} >A</Button></td>
                   <td></td>
-                  <td><Button id='d' onMouseDown={this.touchstart} onTouchStart={this.touchstart} onTouchEnd={this.touchend} onMouseUp={this.touchend} >D</Button></td>
+                  <td><Button style={{width:"100%"}} id='d' onMouseDown={this.touchstart} onTouchStart={this.touchstart} onTouchEnd={this.touchend} onMouseUp={this.touchend} >D</Button></td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><Button id='s' onMouseDown={this.touchstart} onTouchStart={this.touchstart} onTouchEnd={this.touchend} onMouseUp={this.touchend} >S</Button></td>
+                  <td><Button style={{width:"100%"}} id='s' onMouseDown={this.touchstart} onTouchStart={this.touchstart} onTouchEnd={this.touchend} onMouseUp={this.touchend} >S</Button></td>
                   <td></td>
                 </tr>
               </tbody>
